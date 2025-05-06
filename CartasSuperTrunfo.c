@@ -110,34 +110,6 @@ int main(){
     printf("PIB per Capita: Carta %d venceu (%d)\n", (pib_percapta > pib_percapta2) ? 1 : 2, (pib_percapta > pib_percapta2) ? 1 : 0);
     printf("Super Poder: Carta %d venceu (%d)\n", (super_poderCarta1 > super_poderCarta2) ? 1 : 2, (super_poderCarta1 > super_poderCarta2) ? 1 : 0);
 
-    // Pontuação Final
-    int pontos_carta1 = 0;
-    int pontos_carta2 = 0;
-
-    pontos_carta1 += (populacao > populacao2);
-    pontos_carta2 += (populacao <= populacao2);
-
-    pontos_carta1 += (area > area2);
-    pontos_carta2 += (area <= area2);
-
-    pontos_carta1 += (pib > pib2);
-    pontos_carta2 += (pib <= pib2);
-
-    pontos_carta1 += (pontos_turisticos > pontos_turisticos2);
-    pontos_carta2 += (pontos_turisticos <= pontos_turisticos2);
-
-    pontos_carta1 += (densidade_populacional < densidade_populacional2);
-    pontos_carta2 += (densidade_populacional >= densidade_populacional2);
-
-    pontos_carta1 += (pib_percapta > pib_percapta2);
-    pontos_carta2 += (pib_percapta <= pib_percapta2);
-
-    pontos_carta1 += (super_poderCarta1 > super_poderCarta2);
-    pontos_carta2 += (super_poderCarta1 <= super_poderCarta2);
-
-    printf("\nPontuação Final:\n");
-    printf("Carta 1: %d pontos\n", pontos_carta1);
-    printf("Carta 2: %d pontos\n", pontos_carta2);
 
     return 0;
 }
